@@ -216,6 +216,7 @@ class PackedBox implements JsonSerializable
         return [
             'box' => [
                 'reference' => $this->box->getReference(),
+                'outerWidth' => $this->box->getOuterWidth(),
                 'innerWidth' => $this->box->getInnerWidth(),
                 'innerLength' => $this->box->getInnerLength(),
                 'innerDepth' => $this->box->getInnerDepth(),
