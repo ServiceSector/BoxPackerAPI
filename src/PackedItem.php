@@ -136,6 +136,7 @@ class PackedItem implements JsonSerializable
             'x' => $this->x,
             'y' => $this->y,
             'z' => $this->z,
+            'weight' => $this->item->getWeight(),
             'width' => $this->width,
             'length' => $this->length,
             'depth' => $this->depth,
