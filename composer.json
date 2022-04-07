@@ -1,0 +1,42 @@
+{
+    "name": "ecom-systems/boxpacker",
+    "description": "",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^7.4",
+        "ext-json": "*",
+        "psr/log": "^1.0||^2.0||^3.0"
+    },
+    "require-dev": {
+        "behat/behat": "^3.10",
+        "dvdoug/behat-code-coverage": "^5.2.1",
+        "friendsofphp/php-cs-fixer": "^3.3",
+        "monolog/monolog": "^2.3",
+        "phpunit/phpunit": "^9.5.9",
+        "vimeo/psalm": "^4.13"
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true,
+        "bin-compat" : "full",
+        "optimize-autoloader": true
+    },
+    "autoload": {
+        "psr-4": {
+            "DVDoug\\BoxPacker\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DVDoug\\BoxPacker\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "4.0-dev"
+        }
+    }
+}
